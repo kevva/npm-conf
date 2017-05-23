@@ -1,0 +1,38 @@
+{
+  "name": "npm-conf",
+  "version": "0.0.0",
+  "description": "Get the npm config",
+  "license": "MIT",
+  "repository": "kevva/npm-conf",
+  "author": {
+    "name": "Kevin Martensson",
+    "email": "kevinmartensson@gmail.com",
+    "url": "github.com/kevva"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "conf",
+    "config",
+    "global",
+    "npm",
+    "path",
+    "prefix",
+    "rc"
+  ],
+  "dependencies": {
+    "npm": "^4.6.1",
+    "pify": "^2.3.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}
