@@ -33,6 +33,9 @@
   },
   "devDependencies": {
     "ava": "*",
+    "babel-generator": "^6.24.1",
+    "babel-traverse": "^6.24.1",
+    "babylon": "^6.17.1",
     "xo": "*"
   }
 }
