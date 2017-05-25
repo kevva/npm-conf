@@ -3,6 +3,7 @@ const path = require('path');
 const Conf = require('./lib/conf');
 const defaults = require('./lib/defaults');
 
+// https://github.com/npm/npm/blob/latest/lib/config/core.js#L101-L200
 module.exports = opts => {
 	opts = Object.assign({}, opts);
 
