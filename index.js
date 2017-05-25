@@ -1,6 +1,5 @@
 'use strict';
 const path = require('path');
-const makeDir = require('make-dir');
 const Conf = require('./lib/conf');
 const defaults = require('./lib/defaults');
 
@@ -26,13 +25,12 @@ module.exports = opts => {
 
 	if (conf.get('prefix')) {
 		const etc = path.resolve(conf.get('prefix'), 'etc');
-		makeDir.sync(etc);
 		conf.root.globalconfig = path.resolve(etc, 'npmrc');
 		conf.root.globalignorefile = path.resolve(etc, 'npmignore');
 	}
 
 	conf.addFile(conf.get('globalconfig'), 'global');
-	conf.loadExtras();
+	conf.loadUser();
 
 	const caFile = conf.get('cafile');
 
