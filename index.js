@@ -3,7 +3,6 @@ const path = require('path');
 const makeDir = require('make-dir');
 const Conf = require('./lib/conf');
 const defaults = require('./lib/defaults');
-const types = require('./lib/types');
 
 module.exports = opts => {
 	opts = Object.assign({}, opts);
@@ -44,6 +43,4 @@ module.exports = opts => {
 	return conf;
 };
 
-module.exports.Conf = Conf;
 module.exports.defaults = Object.assign({}, defaults.defaults);
-module.exports.types = Object.assign({}, types.types);

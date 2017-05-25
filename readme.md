@@ -15,10 +15,13 @@ $ npm install --save npm-conf
 ```js
 const npmConf = require('npm-conf');
 
-npmConf().then(conf => {
-	console.log(conf.get('prefix'));
-	//=> /Users/unicorn/.npm-packages
-});
+const conf = npmConf();
+
+conf.get('prefix')
+//=> //=> /Users/unicorn/.npm-packages
+
+conf.get('registry')
+//=> https://registry.npmjs.org/
 ```
 
 
@@ -26,7 +29,11 @@ npmConf().then(conf => {
 
 ### npmConf()
 
-Returns a Promise with the `npm` config.
+Returns the `npm` config.
+
+### npmConf.defaults
+
+Returns the default `npm` config.
 
 
 ## License
