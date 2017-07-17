@@ -27,15 +27,9 @@ conf.get('registry')
 
 ## API
 
-### npmConf(defaults)
+### npmConf()
 
 Returns the `npm` config.
-
-#### defaults
-
-Type: `Object`
-
-Default configuration. See the [npm documentation](https://docs.npmjs.com/misc/config) for more information.
 
 ### npmConf.defaults
 

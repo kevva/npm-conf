@@ -4,12 +4,9 @@ const Conf = require('./lib/conf');
 const defaults = require('./lib/defaults');
 
 // https://github.com/npm/npm/blob/latest/lib/config/core.js#L101-L200
-module.exports = opts => {
-	opts = Object.assign({}, opts);
-
+module.exports = () => {
 	const conf = new Conf(Object.assign({}, defaults.defaults));
 
-	conf.add(opts, 'cli');
 	conf.addEnv();
 	conf.loadPrefix();
 
