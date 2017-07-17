@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save npm-conf
+$ npm install npm-conf
 ```
 
 
@@ -38,4 +38,4 @@ Returns the default `npm` config.
 
 ## License
 
-MIT © [Kevin Martensson](http://github.com/kevva)
+MIT © [Kevin Mårtensson](http:s//github.com/kevva)
