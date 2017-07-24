@@ -38,4 +38,4 @@ Returns the default `npm` config.
 
 ## License
 
-MIT © [Kevin Mårtensson](http:s//github.com/kevva)
+MIT © [Kevin Mårtensson](https://github.com/kevva)
