@@ -8,8 +8,8 @@ test('mirror npm config', async t => {
 	const conf = m();
 	const npmconf = await pify(npmCore.load)();
 
-	t.is(conf.get('globalPrefix'), npmconf.get('globalPrefix'));
-	t.is(conf.get('localPrefix'), npmconf.get('localPrefix'));
+	t.is(conf.globalPrefix, npmconf.globalPrefix);
+	t.is(conf.localPrefix, npmconf.localPrefix);
 	t.is(conf.get('prefix'), npmconf.get('prefix'));
 	t.is(conf.get('proxy'), npmconf.get('proxy'));
 	t.is(conf.get('registry'), npmconf.get('registry'));
