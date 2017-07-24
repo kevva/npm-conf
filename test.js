@@ -11,7 +11,6 @@ test('mirror npm config', async t => {
 	t.is(conf.globalPrefix, npmconf.globalPrefix);
 	t.is(conf.localPrefix, npmconf.localPrefix);
 	t.is(conf.get('prefix'), npmconf.get('prefix'));
-	t.is(conf.get('proxy'), npmconf.get('proxy'));
 	t.is(conf.get('registry'), npmconf.get('registry'));
 	t.is(conf.get('tmp'), npmconf.get('tmp'));
 });
