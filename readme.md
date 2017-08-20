@@ -24,11 +24,12 @@ conf.get('registry')
 //=> https://registry.npmjs.org/
 ```
 
-To get a list of all available npm config options:
+To get a list of all available `npm` config options:
 
 ```bash
 npm config list --long
 ```
+
 
 ## API
 
