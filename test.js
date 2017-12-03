@@ -18,3 +18,8 @@ test('mirror npm config', async t => {
 test('mirror npm defaults', t => {
 	t.deepEqual(m.defaults, npmDefaults.defaults);
 });
+
+test('toNerfDart', t => {
+	t.is(m.toNerfDart('https://npm.example.com'), '//npm.example.com/');
+	t.is(m.toNerfDart('https://npm.example.com/some-api/npm-virtual/'), '//npm.example.com/some-api/npm-virtual/');
+});
