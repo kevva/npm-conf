@@ -1,5 +1,6 @@
 'use strict';
 const path = require('path');
+const url = require('url');
 const Conf = require('./lib/conf');
 const defaults = require('./lib/defaults');
 
@@ -41,3 +42,15 @@ module.exports = opts => {
 };
 
 module.exports.defaults = Object.assign({}, defaults.defaults);
+
+// Copied from https://github.com/npm/npm/blob/0cc9d89ed2d46745f91d746fda9d205fd39d3daa/lib/config/nerf-dart.js
+module.exports.toNerfDart = uri => {
+	const parsed = url.parse(uri);
+	delete parsed.protocol;
+	delete parsed.auth;
+	delete parsed.query;
+	delete parsed.search;
+	delete parsed.hash;
+
+	return url.resolve(url.format(parsed), '.');
+};
