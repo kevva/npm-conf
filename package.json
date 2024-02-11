@@ -30,7 +30,7 @@
 		"rc"
 	],
 	"dependencies": {
-		"config-chain": "^1.1.11",
+		"configuration-chain": "^1.1.15",
 		"pify": "^3.0.0"
 	},
 	"devDependencies": {
